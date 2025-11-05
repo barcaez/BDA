@@ -34,12 +34,9 @@ class DGIM:
                 total += size
         return total
 
-# -------------------------
-# ENTER YOUR BIT STREAM HERE
-# -------------------------
 
-dgim = DGIM(10)     # window size (N)
-stream = [1,0,1,1,0,1,0,0,1,1]  # <--- change this
+dgim = DGIM(10)    
+stream = [1,0,1,1,0,1,0,0,1,1]  
 
 for bit in stream:
     dgim.add_bit(bit)
